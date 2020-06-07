@@ -1,0 +1,416 @@
+body {
+  background-color: ;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  margin: 0%;
+  padding: 0%:
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(247, 247, 247, 1);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: silver;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  background-color: #f8f8ff;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* TOPNAV RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* TOPNAV RESPONSIVE */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 0%;
+  font-size: 3em;
+  line-height: 50px;
+  font-family: 'Satisfy', cursive;
+
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 0%;
+  margin-bottom: 3%;
+}
+
+/* POST LOOK AUTOMATIC FOR SCREENS SMALLER THAN 600px */
+@media screen and (max-width: 600px) {
+  .row {
+    margin: 5%;
+    background-color: silver;
+    padding: 10px 10px;
+    box-shadow: 5px 7px #888888;
+    font-size: 1.3em;
+    /* width: 100%; */
+  }
+
+  .blogcard {
+    margin-bottom: 0%;
+  }
+
+  .containerfortitle {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin-top: 5%;
+    margin-bottom: 12%;
+    line-height: 80%;
+  }
+
+  .subheadingopacity {
+    font-size: 1.4em;
+    margin-top: 6%;
+    margin-bottom: 0%;
+    line-height: 80%;
+  }
+
+  .date {
+    opacity: 70%;
+    font-size: 1.4em;
+    margin-top: 0%;
+    margin-bottom: 5%;
+  }
+
+  .containerfortext {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 110%;
+  }
+
+  .columnreadmore {
+    margin-bottom: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
+  .readmore {
+    float: left;
+    background-color: #848482;
+    border-radius: 15%;
+    padding: 2%;
+    border-style: none;
+    margin-top: 1%;
+  }
+
+  .comments {
+    float: right;
+    text-align: center;
+  }
+
+  .number {
+     background-color: #848482;
+     padding: 3%;
+     border-style: none;
+     font-size: 1em;
+     text-align: center;
+     float: right;
+  }
+ }
+
+/* SIDEBAR DESKTOP VIEW */
+@media screen and (min-width: 600px) {
+
+  .sidebar {
+    margin: 5%;
+    margin-right: 2%;
+    background-color: silver;
+    padding: 10px 10px;
+    box-shadow: 5px 7px #888888;
+    font-size: 1.3em;
+    float: right;
+    width: 22%;
+    margin-top: 5%;
+  }
+
+  .about_me {
+    margin-bottom: 0%;
+  }
+
+  .aboutmetitle {
+    text-align: center;
+    line-height: 200%;
+  }
+
+  .containerfortextabout {
+    text-align: center;
+    font-size: 1.2em;
+    /* line-height: 110%; */
+    margin-top: 0%;
+  }
+
+  .learnmore {
+    float: center;
+    background-color: #848482;
+    padding: 5% 35%;
+    border-style: none;
+    margin-top: 1%;
+  }
+
+  .columnlearnmore {
+    margin-bottom: 0%;
+  }
+}
+
+/* SIDEBAR VIEW FOR SCREENS WITH WIDTH OF 600px or LESS */
+@media screen and (max-width: 600px) {
+  .sidebar {
+    margin: 5%;
+    background-color: silver;
+    padding: 10px 10px;
+    box-shadow: 5px 7px #888888;
+    font-size: 1.3em;
+    float: center;
+    /* width: 100%; */
+    text-align: center;
+  }
+
+  .learnmore {
+    float: center;
+    background-color: #848482;
+    padding: 5% 35%;
+    border-style: none;
+    margin-top: 1%;
+  }
+
+  .columnlearnmore {
+    margin-bottom: 0%;
+  }
+}
+
+/* POST LOOK FOR PHONES WITH WIDTH OF 350px or LESS */
+@media screen and (max-width: 350px) {
+
+   .readmore {
+     float: none;
+     background-color: #848482;
+     border-radius: 15%;
+     padding: 2%;
+     border-style: none;
+     margin-top: 1%;
+   }
+
+   .comments {
+     float: none;
+     text-align: center;
+   }
+
+   .columnreadmore {
+     margin-bottom: 10%;
+     margin-right: 10%;
+     margin-left: 10%;
+   }
+
+ }
+
+/* POST LOOK FOR PHONES WITH WIDTH OF 450px or LESS */
+@media screen and (max-width: 450px) {
+
+   .number {
+      background-color: #848482;
+      padding: 3%;
+      border-style: none;
+      font-size: 1em;
+      text-align: center;
+   }
+
+   .readmore {
+     float: none;
+     background-color: #848482;
+     border-radius: 15%;
+     padding: 2%;
+     border-style: none;
+     margin-top: 1%;
+   }
+
+   .comments {
+     float: none;
+     text-align: center;
+   }
+
+   .columnreadmore {
+     margin-bottom: 10%;
+     margin-right: 10%;
+     margin-left: 10%;
+   }
+ }
+
+/* POST LOOK DESKTOP VIEW */
+@media screen and (min-width: 600px) {
+   .row {
+     margin: 5%;
+     margin-right: 2%;
+     background-color: silver;
+     padding: 10px 10px;
+     box-shadow: 5px 7px #888888;
+     font-size: 1.3em;
+     float: left;
+     width: 60%;
+   }
+
+   .blogcard {
+     margin-bottom: 0%;
+   }
+
+   .containerfortitle {
+     text-align: left;
+   }
+
+   h3 {
+     font-size: 2em;
+     margin-top: 5%;
+     margin-bottom: 0%;
+     line-height: 80%;
+   }
+
+
+   .subheadingopacity {
+     font-size: 1.4em;
+     margin-top: 5%;
+     margin-bottom: 0%;
+     line-height: 80%;
+   }
+
+   .date {
+     opacity: 70%;
+     font-size: 1.4em;
+     margin-top: 0%;
+     margin-bottom: 5%;
+   }
+
+   .containerfortext {
+     text-align: left;
+     font-size: 1.2em;
+     line-height: 110%;
+     margin-top: 0%;
+   }
+
+   .columnreadmore {
+     margin-bottom: 10%;
+     margin-right: 2%;
+     margin-left: 2%;
+   }
+
+   .readmore {
+     float: left;
+     background-color: #848482;
+     border-radius: 15%;
+     padding: 2%;
+     border-style: none;
+     margin-top: 1%;
+   }
+
+   .comments {
+     float: right;
+     text-align: center;
+     margin: 0%;
+   }
+
+   .number {
+      background-color: #848482;
+      padding: 3%;
+      border-style: none;
+      font-size: 1em;
+      text-align: center;
+      float: right;
+      margin: 0%;
+      display: inline-block;
+   }
+ }

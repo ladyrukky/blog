@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<title>Blog Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="blog.css">
+<link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+
+<script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<head>
+
+  <h1 class="header">eternity books</h1>
+  <p class="subtitle">a book lovers blog</p>
+
+  <div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="about.html">Behind the Blog</a>
+  <a href="reviews.html">Review</a>
+  <div class="dropdown">
+    <button class="dropbtn">Tags & Memes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Awards</a>
+      <a href="#">Let's Talk Bookish</a>
+      <a href="#">Tag Thursday</a>
+      <a href="#">WWW Wednesday</a>
+    </div>
+  </div>
+  <a href="contact.html">Contact Me</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+</head>
+
+<body>
+
+<!-- SIDE BAR -->
+  <div class="sidebar">
+    <div class="column">
+      <div class="about_me">
+        <img src="Rq.jpg" alt="Rukky Profile Picture" style="width:100%;">
+        <div class="aboutmetitle">
+          <h3><b>Hi! I'm Rukky!!</b></h3>
+          <h5 class="subheadingopacity">Welcome to the blog!</h5>
+        </div>
+
+        <div class="containerfortextabout">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ...</p>
+            <div class="columnlearnmore">
+              <p><a href="about.html"><button class="learnmore"><b>Learn More</b></button></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- FIRST POST -->
+  <div class="row">
+    <div class="column">
+      <div class="blogcard">
+        <img src="image.jpg" alt="Featured Image" style="width:100%;">
+        <div class="containerfortitle">
+          <h3><b>Reacting to My Old Writing</b></h3>
+          <h5 class="subheadingopacity">Hey, It's Embarrassment Time!!</h5>
+          <h6 class="date">by blogger, 2 June 2020</h6>
+        </div>
+
+        <div class="containerfortext">
+          <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+        tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <div class="columnreadmore">
+              <p><a href="#readmore"><button class="readmore"><b>READ MORE »</b></button></a></p>
+              <p><span class="comments"><b>Comments:  </b> <button class="number">0</button></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- SECOND POST CODE -->
+    <div class="row">
+      <div class="column">
+        <div class="blogcard">
+          <img src="image2.jpg" alt="Featured Image" style="width:100%;">
+          <div class="containerfortitle">
+            <h3><b>Designing Bookish Mood-boards</b></h3>
+            <h5 class="subheadingopacity">Featuring my totally amateur attempts</h5>
+            <h6 class="date">by blogger, 3 June 2020</h6>
+          </div>
+
+          <div class="containerfortext">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+          tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+              <div class="columnreadmore">
+                <p><a href="#readmore"><button class="readmore"><b>READ MORE »</b></button></a></p>
+                <p><span class="comments"><b>Comments:  </b> <button class="number">0</button></span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</body>
+</html>
